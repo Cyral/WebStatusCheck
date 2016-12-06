@@ -1,0 +1,2 @@
+# WebStatusCheck
+Server uptime alerting
