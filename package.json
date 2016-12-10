@@ -1,0 +1,10 @@
+{
+  "name": "webstatuscheck",
+  "version": "1.0.0",
+  "dependencies": {
+    "async": "^2.1.4",
+    "request": "^2.79.0",
+    "twilio": "^2.11.1"
+  },
+  "devDependencies": {}
+}
