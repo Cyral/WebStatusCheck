@@ -38,7 +38,6 @@ function check() {
     } else if (results.test.error) {
       // If the server is encountering an error and it was not previously, double check, then mark it as down
       if (!down) {
-        console.log(confirmed);
         if (confirmed) {
           smsAlert("DOWN", results.test.error);
           down = true;
@@ -50,8 +49,7 @@ function check() {
     } else {
       if (down) {
         var minutes = Math.round((new Date().getTime() - downstart) / 60000);
-        var seconds = Math.round((new Date().getTime() - downstart) / 1000);
-        smsAlert("UP", "Service restored after " + minutes + "m " + seconds + "s.");
+        smsAlert("UP", "Service restored after " + minutes + "m.");
         down = false;
         confirmed = false;
       }
